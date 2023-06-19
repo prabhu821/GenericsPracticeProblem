@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace GenericPracticeProblem
 {
-    class DeleteArray
+    class DeleteArray<T>
     {
-        public static void DeleteMethod<T>(ref T[] array, T elementToDelete)
+        public void DeleteMethod(ref T[] array, T elementToDelete)
         {
             int index = Array.IndexOf(array, elementToDelete);
             if (index >= 0)
